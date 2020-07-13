@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Format</title>
+    <script>
+        function dateformat1()
+        {
+            var dt=new Date();
+            document.getElementById('format1').innerHTML=[dt.getMonth()+1,dt.getDate(),dt.getFullYear()].join('/');
+        }
+        function dateformat2()
+        {
+            var dt=new Date();
+            document.getElementById('format2').innerHTML=[dt.getMonth()+1,dt.getDate(),dt.getFullYear()].join('-');
+        }
+    </script>
+</head>
+<body>
+    <h1>Current Date:</h1>
+  <label for="">Date Format 1</label>
+    <p id="format1"></p>
+    <label for="">Date Format 2</label>
+    <p id="format2"></p>
+
+    <button onclick="dateformat1()"> Date Format1</button>
+    <button onclick="dateformat2()"> Date Format2</button>
+</body>
+</html>
